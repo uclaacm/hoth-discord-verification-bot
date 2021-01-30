@@ -1142,7 +1142,7 @@ client.on('message', async (msg) => {
     return;
   }
 
-  const allowed_channels = ['🚓moderators'];
+  const allowed_channels = ['hack-officers'];
   console.log(msg.channel.name);
   if (msg.channel.type !== 'dm' && !allowed_channels.includes(msg.channel.name)) {
     return;
