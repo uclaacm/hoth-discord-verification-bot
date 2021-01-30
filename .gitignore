@@ -1,0 +1,9 @@
+.env
+
+node_modules/
+
+output/
+backup/
+
+*.db
+*.code-workspace

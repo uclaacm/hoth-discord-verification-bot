@@ -1,0 +1,29 @@
+{
+  "name": "hoth-discord-verification-bot",
+  "version": "1.0.0",
+  "description": "ACM Hack HOTH 8 Discord Server Verification Bot",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "source .env && pm2 start main.js --name hoth_discord_bot",
+    "reload": "pm2 reload hoth_discord_bot",
+    "stop": "pm2 stop hoth_discord_bot"
+  },
+  "author": "entrohpy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uclaacm/hoth-discord-verification-bot.git"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.2.5",
+    "ascii-table": "0.0.9",
+    "discord.js": "^12.3.1",
+    "sqlite": "^4.0.14",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "eslint": "^7.9.0"
+  }
+}
